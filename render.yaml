@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: jjk-game-online
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 3000
